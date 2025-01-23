@@ -1,0 +1,13 @@
+# GUI Dependencies
+PyQt5>=5.15.0
+PyQt5-Qt5>=5.15.2
+PyQtChart>=5.15.0
+
+# CAN Communication
+python-can>=4.0.0
+canopen>=2.0.0
+
+# System Requirements (install via apt)
+# sudo apt-get install python3-pyqt5.qtchart
+# sudo apt-get install can-utils
+
