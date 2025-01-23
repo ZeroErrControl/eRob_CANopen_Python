@@ -1,7 +1,8 @@
 # Motor Control System
 
 A Python-based CAN motor control system featuring a real-time GUI interface for precise position control and monitoring.
-![2025-01-23_21-41](https://github.com/user-attachments/assets/10c06f6a-9f95-45d5-8a3d-42b8cdc43c99)
+![2025-01-23_21-44](https://github.com/user-attachments/assets/d096390e-c245-4a2b-87aa-8b5a66d022e7)
+
 
 ## Overview
 
