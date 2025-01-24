@@ -345,12 +345,18 @@ class Motor_PP:
         """Move the motor to the specified angle"""
         position = self.angle_to_position(angle)
         self.target_position = position
-        self.tracking_target = True
-        self.motor.pdo.rx[1]['Target Position'].raw = position  # Set target position
+        
+        # Set target position
+        self.motor.pdo.rx[1]['Target Position'].raw = position
         self.send_sync_frame()
-        self.set_controlword(0x0F)  # Enable operation (Enable)
+        
+        # Reset command trigger bit (bit 4) first
+        self.set_controlword(0x0F)  # Enable operation without command trigger
         self.send_sync_frame()
-        self.set_controlword(0x3F)  # Command triggered (Command triggered)
+        time.sleep(0.1)  # Small delay to ensure edge triggering
+        
+        # Set command trigger bit to create rising edge
+        self.set_controlword(0x1F)  # Command triggered (correct value: 0x1F)
         self.send_sync_frame()
 
 
