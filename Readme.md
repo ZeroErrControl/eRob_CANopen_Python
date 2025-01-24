@@ -2,6 +2,7 @@
 
 A Python-based CAN motor control system featuring a real-time GUI interface for precise position control and monitoring.
 ![2025-01-23_21-44](https://github.com/user-attachments/assets/d096390e-c245-4a2b-87aa-8b5a66d022e7)
+![2025-01-24_19-28](https://github.com/user-attachments/assets/e3987bc5-9a8e-490f-b68b-22fc0310e046)
 
 
 ## Overview
