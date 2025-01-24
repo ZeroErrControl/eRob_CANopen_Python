@@ -46,6 +46,7 @@ pip install -r requirements.txt
 ```bash
 
 sudo ip link set can0 type can bitrate 1000000
+python eRobControl_PP.py
 python MultiMotorControl_PP.py
 ```
 
